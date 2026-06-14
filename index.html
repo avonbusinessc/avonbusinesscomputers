@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>AvonBusinessComputers – Your Tech Partner</title>
 <meta name="description" content="AvonBusinessComputers – Jabalpur's trusted laptop, computer, mobile, and CCTV services since 2000. Book a service ticket online."/>
+<meta property="og:title" content="AvonBusinessComputers – Jabalpur's Tech Expert"/>
+<meta property="og:description" content="Expert laptop repairs, mobile service, CCTV installation & genuine accessories. 26+ years of trusted service."/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1200&q=80"/>
+<meta property="og:url" content="https://avonbusinesscomputers.com"/>
+<meta property="og:type" content="business.business"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4 6h16v12H4z' fill='%231346D8'/><path d='M8 20h8M12 18v2' stroke='%231346D8' stroke-width='2'/><path d='M9 10l2 2 4-4' stroke='%23fff' stroke-width='1.6' fill='none'/></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
@@ -229,6 +236,38 @@
     .services-header{flex-direction:column;align-items:flex-start;}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AvonBusinessComputers",
+  "description": "Expert laptop, computer, mobile, and CCTV services in Jabalpur",
+  "url": "https://avonbusinesscomputers.com",
+  "telephone": "+919826121050",
+  "email": "avonbusinessc@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jabalpur",
+    "addressLocality": "Jabalpur",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Jabalpur",
+  "priceRange": "$$",
+  "foundingDate": "2000",
+  "sameAs": [
+    "https://www.google.com/maps/search/AvonBusinessComputers"
+  ],
+  "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+  "service": [
+    {"@type": "Service", "name": "Laptop & Computer Repair"},
+    {"@type": "Service", "name": "Mobile Phone Service"},
+    {"@type": "Service", "name": "CCTV Installation"},
+    {"@type": "Service", "name": "Networking Setup"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -792,6 +831,17 @@
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<!-- PRODUCTION NOTES:
+  1. HTTPS/SSL: Enable HTTPS on your hosting provider (required for form submissions)
+  2. API KEY: Get your Web3Forms access key from https://web3forms.com (free account)
+  3. IMAGES: Replace Unsplash images with local images for better performance
+     - Create /images/ folder
+     - Download images locally
+     - Update src attributes
+  4. TESTING: Test form submission before going live
+  5. EMAIL: Verify that avonbusinessc@gmail.com receives test submissions
+-->
+
 <script>
   // Mobile menu
   const hamBtn=document.getElementById('hamBtn');
@@ -898,12 +948,16 @@ AvB Internal Portal — avonbusinesscomputers.com
         botcheck:''
       };
 
-      // Use web3forms.com (free, no backend needed)
+      // IMPORTANT: Replace access_key with your Web3Forms key from https://web3forms.com
+      // 1. Go to https://web3forms.com and sign up (free)
+      // 2. Create a new form and copy your access key
+      // 3. Replace the key below with your actual key
+      // 4. Update 'to_email' to receive submissions
       const res=await fetch('https://api.web3forms.com/submit',{
         method:'POST',
         headers:{'Content-Type':'application/json','Accept':'application/json'},
         body:JSON.stringify({
-          access_key:'73ae87aa-4440-41b2-92e4-cc438cdeb16a', // replace with key from web3forms.com
+          access_key:'73ae87aa-4440-41b2-92e4-cc438cdeb16a', // REPLACE with your Web3Forms access key
           subject:`[AvB Service Ticket ${ticketId}] ${device} – ${service}`,
           from_name:name,
           email:email,
