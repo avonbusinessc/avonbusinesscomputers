@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4 6h16v12H4z' fill='%231346D8'/><path d='M8 20h8M12 18v2' stroke='%231346D8' stroke-width='2'/><path d='M9 10l2 2 4-4' stroke='%23fff' stroke-width='1.6' fill='none'/></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"/>
 <style>
   :root{
     --ink:#0D0F14;
@@ -34,16 +34,16 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;}
+  body{font-family:'Segoe UI','Segoe','Roboto',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;}
 
   /* ─── UTILITY ─────────────────────────────── */
   .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-  .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:100px;background:var(--brand-light);color:var(--brand);}
+  .tag{display:inline-block;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:100px;background:var(--brand-light);color:var(--brand);}
   .tag.orange{background:var(--accent-light);color:var(--accent);}
-  .section-label{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:10px;}
-  .section-title{font-family:'Syne',sans-serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:800;line-height:1.15;color:var(--ink);}
+  .section-label{font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:10px;}
+  .section-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:600;line-height:1.15;color:var(--ink);}
   .section-sub{color:var(--steel);font-size:1rem;margin-top:12px;max-width:560px;}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:8px;font-size:.93rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .22s;}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:8px;font-size:.93rem;font-weight:500;cursor:pointer;text-decoration:none;transition:all .22s;}
   .btn-primary{background:var(--brand);color:#fff;border:none;}
   .btn-primary:hover{background:var(--brand-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(19,70,216,.3);}
   .btn-outline{background:transparent;color:var(--brand);border:2px solid var(--brand);}
@@ -57,7 +57,7 @@
   .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
   .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--brand);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
   .logo-mark svg{width:22px;height:22px;fill:#fff;}
-  .logo-text{font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);line-height:1.1;}
+  .logo-text{font-family:'Syne',sans-serif;font-weight:600;font-size:1.05rem;color:var(--ink);line-height:1.1;}
   .logo-text span{display:block;font-family:'Inter',sans-serif;font-size:.65rem;font-weight:500;color:var(--steel);letter-spacing:.06em;text-transform:uppercase;}
   .nav-links{display:flex;align-items:center;gap:6px;list-style:none;}
   .nav-links a{font-size:.88rem;font-weight:500;color:var(--steel);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color .2s,background .2s;}
@@ -76,8 +76,8 @@
   .hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px;}
   .hero-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,92,43,.5)}50%{box-shadow:0 0 0 6px rgba(255,92,43,0)}}
-  .hero-live{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);}
-  .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:800;line-height:1.08;color:var(--ink);}
+  .hero-live{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);}
+  .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:600;line-height:1.08;color:var(--ink);}
   .hero h1 .hi{color:var(--brand);}
   .hero-desc{color:var(--steel);font-size:1.05rem;margin:20px 0 32px;max-width:480px;}
   .hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
@@ -88,16 +88,16 @@
   .hero-img-frame{border-radius:20px;overflow:hidden;box-shadow:var(--shadow-hover);aspect-ratio:4/3;background:linear-gradient(135deg,#1346D8 0%,#0D2A8A 100%);display:flex;align-items:center;justify-content:center;}
   .hero-img-frame img{width:100%;height:100%;object-fit:cover;}
   .hero-stat-card{position:absolute;bottom:-20px;left:-20px;background:var(--white);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);min-width:160px;}
-  .hero-stat-card .num{font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:var(--brand);}
+  .hero-stat-card .num{font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:600;color:var(--brand);}
   .hero-stat-card .lbl{font-size:.78rem;color:var(--steel);margin-top:2px;}
-  .hero-badge{position:absolute;top:-16px;right:-16px;background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-size:.78rem;font-weight:700;text-align:center;line-height:1.3;}
+  .hero-badge{position:absolute;top:-16px;right:-16px;background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-size:.78rem;font-weight:600;text-align:center;line-height:1.3;}
 
   /* ─── STATS STRIP ─────────────────────────── */
   .stats-strip{background:var(--brand);padding:32px 0;margin:60px 0 0;}
   .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:0;}
   .stat-item{padding:8px 0;border-right:1px solid rgba(255,255,255,.15);}
   .stat-item:last-child{border-right:none;}
-  .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#fff;}
+  .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:600;color:#fff;}
   .stat-lbl{font-size:.8rem;color:rgba(255,255,255,.7);margin-top:4px;letter-spacing:.04em;}
 
   /* ─── SERVICES ────────────────────────────── */
@@ -108,7 +108,7 @@
   .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--brand);}
   .service-icon{width:52px;height:52px;border-radius:12px;background:var(--brand-light);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
   .service-icon svg{width:26px;height:26px;stroke:var(--brand);fill:none;stroke-width:1.7;}
-  .service-card h3{font-family:'Syne',sans-serif;font-size:1.12rem;font-weight:700;margin-bottom:10px;}
+  .service-card h3{font-family:'Syne',sans-serif;font-size:1.12rem;font-weight:500;margin-bottom:10px;}
   .service-card p{font-size:.9rem;color:var(--steel);line-height:1.6;}
   .service-card .tag{margin-top:16px;}
 
@@ -121,9 +121,9 @@
   .product-img{aspect-ratio:1;background:var(--brand-light);overflow:hidden;display:flex;align-items:center;justify-content:center;}
   .product-img img{width:100%;height:100%;object-fit:cover;}
   .product-info{padding:16px;}
-  .product-info h4{font-weight:600;font-size:.95rem;margin-bottom:4px;}
+  .product-info h4{font-weight:500;font-size:.95rem;margin-bottom:4px;}
   .product-info p{font-size:.82rem;color:var(--steel);}
-  .product-badge{display:inline-block;margin-top:8px;font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--accent-light);color:var(--accent);}
+  .product-badge{display:inline-block;margin-top:8px;font-size:.72rem;font-weight:500;padding:3px 10px;border-radius:100px;background:var(--accent-light);color:var(--accent);}
 
   /* ─── CCTV / CAMERA ──────────────────────── */
   .cctv{padding:80px 0;}
@@ -132,7 +132,7 @@
   .cctv-feat{display:flex;gap:16px;align-items:flex-start;}
   .feat-icon{width:42px;height:42px;flex-shrink:0;border-radius:10px;background:var(--brand-light);display:flex;align-items:center;justify-content:center;}
   .feat-icon svg{width:20px;height:20px;stroke:var(--brand);fill:none;stroke-width:1.8;}
-  .feat-text h4{font-weight:600;font-size:.95rem;}
+  .feat-text h4{font-weight:500;font-size:.95rem;}
   .feat-text p{font-size:.85rem;color:var(--steel);margin-top:2px;}
   .cctv-img-wrap{border-radius:20px;overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-hover);}
   .cctv-img-wrap img{width:100%;height:100%;object-fit:cover;}
@@ -141,8 +141,8 @@
   .why{padding:80px 0;background:var(--white);}
   .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
   .why-card{padding:28px;border-radius:var(--radius);background:var(--paper);border:1px solid var(--border);}
-  .why-card .num{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:var(--brand);opacity:.18;line-height:1;}
-  .why-card h3{font-weight:700;font-size:1.05rem;margin:8px 0 6px;}
+  .why-card .num{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:600;color:var(--brand);opacity:.18;line-height:1;}
+  .why-card h3{font-weight:500;font-size:1.05rem;margin:8px 0 6px;}
   .why-card p{font-size:.88rem;color:var(--steel);}
 
   /* ─── BOOKING ─────────────────────────────── */
@@ -156,7 +156,7 @@
   .booking-perk{display:flex;align-items:center;gap:12px;font-size:.9rem;color:rgba(255,255,255,.85);}
   .perk-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;}
   .booking-form{background:#fff;border-radius:20px;padding:36px;}
-  .form-title{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:24px;color:var(--ink);}
+  .form-title{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:500;margin-bottom:24px;color:var(--ink);}
   .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   .form-group{display:flex;flex-direction:column;gap:6px;}
   .form-group.full{grid-column:1/-1;}
@@ -509,6 +509,106 @@
         <div class="product-info">
           <h4>Storage Drives</h4>
           <p>SSD, HDD, USB flash drives & memory cards</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793985.jpg" alt="WiFi CCTV Camera" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>WiFi CCTV Camera 4K</h4>
+          <p>Smart wireless security camera with AI detection</p>
+          <span class="product-badge">Available</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793988.jpg" alt="Dahua CCTV Cameras" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>Dahua CCTV Systems</h4>
+          <p>Professional-grade IR bullet & eyeball cameras</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793992.jpg" alt="Hikvision CCTV" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>Hikvision CCTV Camera</h4>
+          <p>HD surveillance camera with remote monitoring</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793986.jpg" alt="HP Printers" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>HP Printers & MFP</h4>
+          <p>Laser & inkjet printers with scanning capability</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793993.jpg" alt="Crucial SSD" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>Crucial SSD BX500 240GB</h4>
+          <p>Fast SATA 2.5" solid state drive storage</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="6156518225487793994.jpg" alt="WD External Drive" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>WD My Passport HDD</h4>
+          <p>Portable external hard drive backup solution</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="m9KBbr2WI5Q3Wmcp6k0WNhtfltUTdHIavFljxcOiJXHm_v2l5Mb7yoXAlz2hP7wfHzNag45_oQ87iFYwqSp8_PvqmA5tdDWRINpEAbREX0bN0Jnz2dSDKRiGvYy-36GDxY4GaY5VbFcsy-tddfehlr-Oku3tp5EWaZi44Bn_qmEfJxnHPBwEcHPkQZCFZH-5.jpeg" alt="NVIDIA RTX 5050" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>NVIDIA GeForce RTX 5050</h4>
+          <p>High-performance graphics card for gaming & 3D</p>
+          <span class="product-badge">Available</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="zIO9Au2oiVMCw_aPyGRDAYCOsG6cRrX8xvKmxBTeoUnHI6MITdj8rfmtM2tEDITpymnCUN3XdCxP0l7bmrM27_8Z1teU6gEhJec2yXfztOGROITk5KTyvBW5UW4QFfg4flkBWn5pU-HImbC4PlWepz5jhzMbCu0sRoy1_1pyQhe1xWoIbByDJ4x4ke7GOF1j.jpeg" alt="AMD Radeon RX 7900" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>AMD Radeon RX 7900 XTX</h4>
+          <p>Ultra-powerful GPU for 4K gaming & workstations</p>
+          <span class="product-badge">Limited Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="YZIRtAtLu41jTLArnkPvTxmgsWbKHWaJzwOXb5Z_njka-atPqWOD8dAqBoeEEPM8bx0ZMUSeTT6hdwXGpULjeetqoN3C_ouwo0j6D91qA8IRMJN8HtHcPk6Snt4D_jp2BXadR4iaw3HEqVJHdkEt4G_eyiqxwz7zxmyeucOyyfAbXTtEBV2qfHgHRqhWtKae.jpeg" alt="Sony Speakers" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>Sony Bluetooth Speakers</h4>
+          <p>Wireless portable speakers with premium sound</p>
+          <span class="product-badge">In Stock</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="Q02l23y44Ls9zg3zON9vlazmOH1bR-MivMvniQ08rfJNeoEEp0op3uAUmjVrj4_2ECiJ6INtOCQbCX2jyLME53pu6ISyMxF-6PaOHWr-4YvoiEs3jX6q_9bx7OjIp0YImxVdlWdHNDGw845DXqmdK1IPjc3hI3nxMY-KEIG_gUZWUbn5_dqr0uZMq7vMzviS.jpeg" alt="Gaming Setup" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h4>Complete Gaming Setup</h4>
+          <p>Monitor, keyboard, mouse & RGB accessories</p>
           <span class="product-badge">In Stock</span>
         </div>
       </div>
